@@ -1,2 +1,2 @@
 # DogGPT
-Dog walking business assitant powered by GPT
+Dog walking business assistant powered by GPT

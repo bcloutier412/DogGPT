@@ -38,13 +38,16 @@
       Controller:
         <ul>
           <li>
-            Express.js
+            Framework/Structure -> Express.js
           </li>
           <li>
             OpenAI GPT API
           </li>
           <li>
-            Passport.js
+            Auth -> Passport.js
+          </li>
+          <li>
+            Testing -> jest/supertest
           </li>
         </ul>
     </li>
@@ -73,3 +76,89 @@
       </ul>
     </li>
   </ul>
+
+<h2>Mini Sprints</h2>
+  <ol>
+    <li>
+      <b>Basic Model tuning for GPT [ ]</b>
+      <ul>
+        <li>
+          Learn how to fine tune GPT model [ ]
+        </li>
+        <li>
+          Create training dataset from pre-written summaries [ ]
+        </li>
+        <li>
+          Test model [ ]
+        </li>
+        <li>
+          Real World Test [ ]
+        </li>
+        <li>
+          <b>Target Date:</b> Wed 06/05/2024
+        </li>
+      </ul>
+    </li>
+    <li>
+      <b>Backend with login/logout Routes [ ]</b>
+      <ul>
+        <li>
+          Setup project file structure [ ]
+          <ul>
+            <li>
+              index.js [ ]
+            </li>
+            <li>
+              app.js [ ]
+            </li>
+            <li>
+              utils/middleware/loggers [ ]
+            </li>
+            <li>
+              config.js
+            </li>
+          </ul>
+        </li>
+        <li>
+              Connect to database [ ]
+            </li>
+            <li>
+              Passport structure [ ]
+            </li>
+            <li>
+              User Models [ ]
+            </li>
+            <li>
+              Login Routes [ ]
+            </li>
+            <li>
+              Logout Routes [ ]
+            </li>
+            <li>
+              Test with .rest [ ]
+            </li>
+            <li>
+              Test with Jest/supertest [ ]
+            </li>
+        <li>
+          <b>Target Date:</b> Wed 06/12/2024
+        </li>
+      </ul>
+    </li>
+    <li>
+      <b>Simple user model structure [ ]</b>
+      <ul>
+        <li>
+        </li>
+        <li>
+          Target Date: Wed 06/14/2024
+        </li>
+      </ul>
+    </li>
+    <li>
+      <b>Initial login/logout for frontend [ ]</b>
+    </li>
+    <li>
+      <b>Frontend dog profile page [ ]</b>
+    </li>
+  </ol>

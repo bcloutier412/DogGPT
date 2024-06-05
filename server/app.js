@@ -3,6 +3,8 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require('path');
+const passport = require('passport');
+var session = require('express-session');
 
 // Utils
 const config = require("./utils/config.js");
@@ -10,6 +12,7 @@ const logger = require("./utils/logger.js");
 const { requestLogger, errorHandler } = require("./utils/middleware")
 
 // Routes
+const authRouter = require('./controllers/auth.js')
 
 mongoose.set("strictQuery", false);
 
@@ -30,10 +33,19 @@ app.use(requestLogger);
 app.use(express.static(path.join(__dirname, 'build')));
 
 // LOGIN SESSION STUFF
-
+app.use(session({
+  secret: 'something that is random',
+  cookie: {
+      maxAge: 60000 * 60 * 24 * 30,
+  },
+  resave: false,
+  saveUninitialized: false,
+  name: 'passport.userpass'
+}))
+app.use(passport.authenticate('session'));
 
 // USE ROUTES
-
+app.use('/api/auth', authRouter)
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));

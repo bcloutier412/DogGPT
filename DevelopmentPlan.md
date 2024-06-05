@@ -80,16 +80,24 @@
 <h2>Mini Sprints</h2>
   <ol>
     <li>
+      <b>Build Basic Data Collecting model to serve to GPT tuning [x]</b>
+      <ul>
+        <li>
+          Basic Google Form [x]
+        </li>
+      </ul>
+    </li>
+    <li>
       <b>Basic Model tuning for GPT [ ]</b>
       <ul>
         <li>
-          Learn how to fine tune GPT model [ ]
+          Learn how to fine tune GPT model [x]
         </li>
         <li>
-          Create training dataset from pre-written summaries [ ]
+          Create training dataset from pre-written summaries [x]
         </li>
         <li>
-          Test model [ ]
+          Test model [x]
         </li>
         <li>
           Real World Test [ ]
@@ -103,24 +111,24 @@
       <b>Backend with login/logout Routes [ ]</b>
       <ul>
         <li>
-          Setup project file structure [ ]
+          Setup project file structure [x]
           <ul>
             <li>
-              index.js [ ]
+              index.js [x]
             </li>
             <li>
-              app.js [ ]
+              app.js [x]
             </li>
             <li>
-              utils/middleware/loggers [ ]
+              utils/middleware/loggers [x]
             </li>
             <li>
-              config.js
+              config.js [x]
             </li>
           </ul>
         </li>
         <li>
-              Connect to database [ ]
+              Connect to database [x]
             </li>
             <li>
               Passport structure [ ]
